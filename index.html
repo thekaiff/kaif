@@ -2181,20 +2181,36 @@
                 <p class="contact-intro">Let's build something impactful. I'm always open to discussing data projects, collaboration opportunities, or how analytics can solve your business challenges</p>
                 
                 <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    
                     <!-- Web3Forms Access Key -->
                     <input type="hidden" name="access_key" value="cdbe6bcd-baaa-40e3-b15b-f2da4ea23ec6">
-                    
-                    <!-- Your email (where messages will be sent) -->
+
+                    <!-- Your email (where you'll receive messages) -->
                     <input type="hidden" name="email" value="kaif.sdk.uae@gmail.com">
 
+                    <!-- Custom subject line with sender's name -->
+                    <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+
+                    <!-- Customize the email format -->
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+                    <!-- Remove confusing default fields from email -->
+                    <input type="hidden" name="replyto" value="">
+                    
+                    <!-- Web3Forms Access Key
+                    <input type="hidden" name="access_key" value="cdbe6bcd-baaa-40e3-b15b-f2da4ea23ec6">
+                    -->
+                    <!-- Your email (where messages will be sent) -->
+                    <!-- <input type="hidden" name="email" value="kaif.sdk.uae@gmail.com"> -->
+
                     <!-- Redirect to your portfolio after submission -->
-                    <input type="hidden" name="redirect" value="https://thekaiff.github.io/portfolio/#contact">
+                    <!-- <input type="hidden" name="redirect" value="https://thekaiff.github.io/portfolio/#contact"> -->
                     
                     <!-- Optional: Subject line customization -->
-                    <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                    <!-- <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio"> -->
                     
                     <!-- Optional: From name -->
-                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <!-- <input type="hidden" name="from_name" value="Portfolio Contact Form"> --> -->
                     
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Name" required autocomplete="name">
@@ -2202,7 +2218,7 @@
                         <span class="form-error">Please enter your name</span>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="reply_to" placeholder="Email" required autocomplete="email">
+                        <input type="email" id="email" name="sender_email" placeholder="Email" required autocomplete="email">
                         <label for="email">Email</label>
                         <span class="form-error">Please enter a valid email</span>
                     </div>
