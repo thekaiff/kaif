@@ -10,17 +10,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:url" content="https://thekaiff.github.io/portfolio/">
     <meta property="og:title" content="Kaif Sayed | Data Analyst Portfolio">
     <meta property="og:description" content="Data Analyst specializing in Python, SQL, Power BI, and Machine Learning. Transforming data into actionable insights.">
-    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+    <meta property="og:image" content="https://thekaiff.github.io/portfolio/images/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:url" content="https://thekaiff.github.io/portfolio/">
     <meta property="twitter:title" content="Kaif Sayed | Data Analyst Portfolio">
     <meta property="twitter:description" content="Data Analyst specializing in Python, SQL, Power BI, and Machine Learning. Transforming data into actionable insights.">
-    <meta property="twitter:image" content="https://yourwebsite.com/images/og-image.jpg">
+    <meta property="twitter:image" content="https://thekaiff.github.io/portfolio/images/og-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23000' width='100' height='100' rx='20'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='60' fill='%23ff6b35'>K</text></svg>">
@@ -2184,6 +2184,9 @@
                     <!-- Web3Forms Access Key -->
                     <input type="hidden" name="access_key" value="cdbe6bcd-baaa-40e3-b15b-f2da4ea23ec6">
                     
+                    <!-- Your email (where messages will be sent) -->
+                    <input type="hidden" name="email" value="kaif.sdk.uae@gmail.com">
+
                     <!-- Redirect to your portfolio after submission -->
                     <input type="hidden" name="redirect" value="https://thekaiff.github.io/portfolio/#contact">
                     
@@ -2199,7 +2202,7 @@
                         <span class="form-error">Please enter your name</span>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+                        <input type="email" id="email" name="reply_to" placeholder="Email" required autocomplete="email">
                         <label for="email">Email</label>
                         <span class="form-error">Please enter a valid email</span>
                     </div>
@@ -2241,14 +2244,14 @@
                         <span>github<br><span style="color: var(--text-grey)">@thekaiff</span></span>
                     </a>
                     
-                    <a href="mailto:kaifsdkpro2@gmail.com" class="social-link" id="emailLink" aria-label="Send email">
+                    <a href="mailto:kaif.sdk.uae@gmail.com" class="social-link" id="emailLink" aria-label="Send email">
                         <div class="social-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                         </div>
-                        <span>email<br><span style="color: var(--text-grey)">kaifsdkpro2@gmail.com</span></span>
+                        <span>email<br><span style="color: var(--text-grey)">kaif.sdk.uae@gmail.com</span></span>
                     </a>
                 </div>
             </section>
@@ -2591,7 +2594,7 @@
         if (emailLink) {
             emailLink.addEventListener('click', function(e) {
                 e.preventDefault();
-                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=kaifsdkpro2@gmail.com&su=${encodeURIComponent('Contact from Portfolio')}&body=${encodeURIComponent('Hello,')}`;
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=kaif.sdk.uae@gmail.com&su=${encodeURIComponent('Contact from Portfolio')}&body=${encodeURIComponent('Hello,')}`;
                 window.open(gmailUrl, '_blank');
             });
         }
@@ -2625,7 +2628,7 @@
         "@type": "Person",
         "name": "Kaif Sayed",
         "jobTitle": "Data Analyst",
-        "url": "https://yourwebsite.com",
+        "url": "https://thekaiff.github.io/portfolio/",
         "sameAs": [
             "https://www.linkedin.com/in/kaifsayed57/",
             "https://github.com/thekaiff"
